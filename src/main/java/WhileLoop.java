@@ -15,7 +15,7 @@ public class WhileLoop {
      *     sum = sum + i;
      *     i = i + 1;
      *
-     * Meaning, so long as as a number i, which we've defined, is less that some number end,
+     * Meaning, so long as a number i, which we've defined, is less that some number end,
      * let's add the number i to sum and increase it by 1.
      * So: counting from 0 to end = 6 (excluding 6), we add the numbers to a total count
      *     (ie as i goes from 0 -> 1 -> 2 -> 3 -> 4 -> 5 sum goes from 0 -> 1 -> 3 -> 6 -> 10 -> 15)
@@ -36,7 +36,11 @@ public class WhileLoop {
         int sum = 0;
         int i = 0;
 
-//        code here
+        while (i < end) {
+            sum = sum + i;
+            i = i + 1;
+            
+        }
 
         return sum;
     }
